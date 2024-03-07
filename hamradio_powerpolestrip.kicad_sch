@@ -588,23 +588,23 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
 			(pin_names
-				(offset 1.016)
-			)
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -629,7 +629,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -647,7 +647,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -656,9 +656,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -666,6 +666,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -1900,6 +1920,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 78.74 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b92f6f-2664-4100-b80e-74ca9f69a2d0")
+		(property "Reference" "#PWR012"
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3781f6e5-a657-44f7-bce0-278e862e121b")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse")
 		(at 54.61 38.1 90)
 		(unit 1)
@@ -1962,6 +2048,72 @@
 			(project "hamradio_powerpolestrip"
 				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 53.34 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c032cef-ee3f-4625-ab8e-b3069360983f")
+		(property "Reference" "#PWR010"
+			(at 53.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9c1c4a9-a16e-46b9-b9aa-6f74c6b4f5d1")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -2036,6 +2188,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 25.4 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4372aaf9-d337-47a3-9ba6-b1d73d0d14dc")
+		(property "Reference" "#PWR08"
+			(at 25.4 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92ce3385-0628-45d6-a470-54af1c386f87")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse")
 		(at 143.51 76.2 90)
 		(unit 1)
@@ -2104,7 +2322,73 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:GND")
+		(at 102.87 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f6eff90-518d-4a64-a831-a9ead2e4bb32")
+		(property "Reference" "#PWR013"
+			(at 102.87 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18dd1af1-132d-45da-b84a-65623d249eba")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 102.87 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2114,7 +2398,7 @@
 		(fields_autoplaced yes)
 		(uuid "70d638f8-67e7-4831-9166-329ff2bef368")
 		(property "Reference" "H8"
-			(at 105.41 171.4499 0)
+			(at 105.41 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,7 +2407,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 105.41 173.9899 0)
+			(at 105.41 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2149,7 +2433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 102.87 172.72 0)
 			(effects
 				(font
@@ -2157,6 +2441,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "d393e8bc-c57b-41d3-a7cb-f951b5509f25")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -2504,7 +2791,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 53.34 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2514,7 +2801,7 @@
 		(fields_autoplaced yes)
 		(uuid "89b8955b-cda6-4c50-be58-8c24b5a2ee9d")
 		(property "Reference" "H4"
-			(at 55.88 171.4499 0)
+			(at 55.88 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2523,7 +2810,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 55.88 173.9899 0)
+			(at 55.88 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2549,7 +2836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 53.34 172.72 0)
 			(effects
 				(font
@@ -2557,6 +2844,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "5ce49923-b202-4014-a55e-789898e4b97c")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -2568,7 +2858,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 102.87 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2578,7 +2868,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f98f0a2-7456-4a8f-bd5c-b0d3284325a3")
 		(property "Reference" "H7"
-			(at 105.41 160.0199 0)
+			(at 105.41 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +2877,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 105.41 162.5599 0)
+			(at 105.41 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2613,7 +2903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 102.87 161.29 0)
 			(effects
 				(font
@@ -2621,6 +2911,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "648c30e0-044a-414d-8bd7-21bd83d4e324")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -2698,7 +2991,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 25.4 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2708,7 +3001,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7807d8c-bccd-4724-ad3f-229c53a00b6c")
 		(property "Reference" "H2"
-			(at 27.94 171.4499 0)
+			(at 27.94 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2717,7 +3010,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 27.94 173.9899 0)
+			(at 27.94 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +3036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 25.4 172.72 0)
 			(effects
 				(font
@@ -2751,6 +3044,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "756d54c7-1f5b-4c33-8625-ea06de818c18")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -2832,7 +3128,73 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "power:GND")
+		(at 78.74 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b96e0693-281c-4460-b1f4-85c688d70d26")
+		(property "Reference" "#PWR011"
+			(at 78.74 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "993ed98d-aa8e-447f-aad8-0798154b2246")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 25.4 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2842,7 +3204,7 @@
 		(fields_autoplaced yes)
 		(uuid "bae3942b-64ff-4fe3-8a84-4d82c06d98ed")
 		(property "Reference" "H1"
-			(at 27.94 160.0199 0)
+			(at 27.94 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2851,7 +3213,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 27.94 162.5599 0)
+			(at 27.94 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,7 +3239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 25.4 161.29 0)
 			(effects
 				(font
@@ -2885,6 +3247,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "9072db72-2a2c-4651-b23f-a8858a06d1ae")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -2896,7 +3261,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 78.74 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2906,7 +3271,7 @@
 		(fields_autoplaced yes)
 		(uuid "c148d0ab-0cdf-461c-91b2-69fd57a84bd4")
 		(property "Reference" "H5"
-			(at 81.28 160.0199 0)
+			(at 81.28 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,7 +3280,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 81.28 162.5599 0)
+			(at 81.28 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2941,7 +3306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 78.74 161.29 0)
 			(effects
 				(font
@@ -2949,6 +3314,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "65d50042-7998-474b-becb-a42ef3549611")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -3098,7 +3466,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 53.34 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3108,7 +3476,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf7ff795-17d0-40b1-8665-d7aff6193de6")
 		(property "Reference" "H3"
-			(at 55.88 160.0199 0)
+			(at 55.88 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,7 +3485,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 55.88 162.5599 0)
+			(at 55.88 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3143,7 +3511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 53.34 161.29 0)
 			(effects
 				(font
@@ -3151,6 +3519,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "8c442525-b042-4170-82ff-d56fc808760d")
 		)
 		(instances
 			(project "hamradio_powerpolestrip"
@@ -3298,7 +3669,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 78.74 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3308,7 +3679,7 @@
 		(fields_autoplaced yes)
 		(uuid "deefc925-ba80-455b-a445-121b8767b3e2")
 		(property "Reference" "H6"
-			(at 81.28 171.4499 0)
+			(at 81.28 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3317,7 +3688,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 81.28 173.9899 0)
+			(at 81.28 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3343,7 +3714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 78.74 172.72 0)
 			(effects
 				(font
@@ -3352,10 +3723,145 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "a80e40df-6ab1-4d71-b8f3-db1d89457765")
+		)
 		(instances
 			(project "hamradio_powerpolestrip"
 				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 25.4 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4a8a5ed-4c64-47c8-9c4e-c9d9eca2d310")
+		(property "Reference" "#PWR07"
+			(at 25.4 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58d3a29f-07d1-4d58-b116-ca818b5943c2")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eba7b51d-9be0-42f6-a5f7-5723d5801953")
+		(property "Reference" "#PWR014"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9ef6172-4ee6-4abf-8d51-37bf04e6127f")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3628,6 +4134,72 @@
 			(project "hamradio_powerpolestrip"
 				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
 					(reference "F5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 53.34 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffe00201-8a51-4c75-99ad-bae8d0dbbc54")
+		(property "Reference" "#PWR09"
+			(at 53.34 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bec034b8-fdc0-4a7f-b02b-1423ea002799")
+		)
+		(instances
+			(project "hamradio_powerpolestrip"
+				(path "/2de419ec-4eb1-4e5f-b1fd-ecd12d08656b"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
