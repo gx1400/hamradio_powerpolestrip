@@ -1,0 +1,164 @@
+(footprint "anderson_powerpole_15-45_2pole"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -4.5 -4 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0095eaa3-5c48-40ce-b498-d7fd5d823e42")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "anderson_powerpole_15-45_2pole"
+		(at 5 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c9e82a5c-cff0-4a28-88f1-f95262c7dfd9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f1d65a9-f516-4ce6-9213-24a659d9a1be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9dff6f9-ca69-4ac0-a2cd-2b86fbc9409d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "72b005f1-bbb8-496f-9d19-f0a582773fd7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 4 -6.25)
+		(end 4 2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "13bea69e-4deb-4877-be9c-6a55e8db6b24")
+	)
+	(fp_rect
+		(start -3.75 -6.25)
+		(end 11.75 2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "25cc0e15-77b8-43d0-b0f9-655b3faef8a1")
+	)
+	(fp_text user "Red"
+		(at -4 2 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8cb6bdef-04f3-404a-89b6-6681c3e02f17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Black"
+		(at 12 2 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9b2b132f-b6af-4a47-ae22-7664a3e2b521")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left top)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4 -7.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d5457466-d5d5-47d5-b375-4e0e8386119d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 6.5 7.75)
+		(drill oval 4.5 1.45
+			(offset 0 -2)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.05)
+		(solder_mask_margin 0.102)
+		(uuid "0ae51d69-084c-43a6-838a-9185a647e010")
+	)
+	(pad "2" thru_hole roundrect
+		(at 8 0)
+		(size 6.5 7.75)
+		(drill oval 4.5 1.45
+			(offset 0 -2)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.05)
+		(solder_mask_margin 0.102)
+		(uuid "15d945e6-fa73-4451-af89-953b0df00d90")
+	)
+	(model "${KIPRJMOD}/3d/PowerPoles.stp"
+		(offset
+			(xyz 0 2.1 0.05)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
